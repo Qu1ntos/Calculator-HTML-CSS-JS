@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div id="calculator">
+        <div>
+            <input id="display">
+        </div>
+
+        <div class="buttons">
+            <div>
+                <button class="controle" onclick="clearDisplay()">C</button>
+                <button class="controle" onclick="changePN()">+/-</button>
+                <button class="controle" onclick="percent()">%</button>
+                <button class="controle" onclick="ATD('/')">/</button>
+            </div>
+            <div>
+                <button class="numbers" onclick="ATD('7')">7</button>
+                <button class="numbers" onclick="ATD('8')">8</button>
+                <button class="numbers" onclick="ATD('9')">9</button>
+                <button class="controle" onclick="ATD('*')">*</button>
+            </div>
+            <div>
+                <button class="numbers" onclick="ATD('4')">4</button>
+                <button class="numbers" onclick="ATD('5')">5</button>
+                <button class="numbers" onclick="ATD('6')">6</button>
+                <button class="controle" onclick="ATD('-')">-</button>
+            </div>
+            <div>
+                <button class="numbers" onclick="ATD('1')">1</button>
+                <button class="numbers" onclick="ATD('2')">2</button>
+                <button class="numbers" onclick="ATD('3')">3</button>
+                <button class="controle" onclick="ATD('+')">+</button>
+            </div>
+            <div>
+                <button class="numbers" id="zeroButton" onclick="ATD('0')">0</button>
+                <button class="numbers" onclick="ATD(',')">,</button>
+                <button class="controle" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
